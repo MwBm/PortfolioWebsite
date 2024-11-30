@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>mbergstromweb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- hero -->
+    <div class="hero-image">
+      <h1 class="above-title">Hello, my name is Matthew Bergstrom</h1>
+      <h2 id="title">
+        <span id="text"></span>
+        <span id="cursor"></span>
+      </h2>
+    </div>
+
+    <!-- INTRO -->
+    <div class="container-for-columns">
+      <div class="image-container">
+        <img
+          src="images/24_Bergstrom_32.jpeg"
+          alt="Profile Image"
+          class="rounded-image"
+        />
+        <div class="profile-buttons">
+          <a class="btn" onclick="window.open('https://github.com/MwBm')">
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            class="btn"
+            onclick="window.open('https://www.linkedin.com/in/matthew-bergstrom-3578aa215/')"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            class="btn"
+            onclick="window.open('https://docs.google.com/document/d/1H6XcNgtCzZjt5KcOUns35ifxMROB5wLV/edit')"
+          >
+            <i class="fas fa-file-alt"></i>
+          </a>
+          <a
+            class="btn"
+            onclick="location.href='mailto:matthewbergstrom23@gmail.com';""
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="small-container">
+        <h2 class="intro">Introduction</h2>
+        <p class="text-content">
+          Ever since I took my first advanced math class, I knew I wanted to become an engineer. However, it was an online 
+          Java course that solidified my passion for computer science. Through the constant process of creating and refining 
+          in this field, I’ve realized how much my mindset has evolved. What once seemed impossible now feels achievable, and 
+          every challenge presents a potential solution—it's just a matter of finding it. Outside of programming, I enjoy photography 
+          (the cover photo is one of my own), weightlifting, reading, and spending time with friends and family. 
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="projects">
+      <h2>Projects</h2>
+    </div>
+    <div class="container-for-columns proj">
+      <div class="image-container">
+        <img
+          src="images/awslogo.png"
+          alt="Profile Image"
+          class="rounded-image aws"
+        />
+      </div>
+      <div class="small-container">
+        <h3 class="proj-names">AWSxINRIX Hackathon</h3>
+        <p class="text-content">
+          My team and I developed a Google Chrome extension using Claude 3 Sonnet through AWS Bedrock to assist users in navigating 
+          any website they visit. For this project, I was responsible for integrating Claude as the API, leveraging Postman and Python 
+          to complete the task.
+        </p>
+        <a class="btn to-proj" onclick="window.open('https://devpost.com/software/askron')">
+            <p>DevPost</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="box">
+      <h2>Tech Stack</h2>
+      <div class="lang">
+        <div class="prog-lang">
+          <i class="devicon-c-plain"></i>
+          <p>C</p>
+        </div>
+        <div class="prog-lang">
+          <i class="devicon-cplusplus-plain"></i>
+          <p>C++</p>
+        </div>
+        <div class="prog-lang">
+          <i class="devicon-python-plain"></i>
+          <p>Python</p>
+        </div>
+        <div class="prog-lang">
+          <i class="devicon-javascript-plain"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="prog-lang">
+          <i class="devicon-html5-plain"></i>
+          <p>HTML</p>
+        </div>
+        <div class="prog-lang">
+          <i class="devicon-css3-plain"></i>
+          <p>CSS</p>
+        </div>
+        <div class="prog-lang">
+          <i class="devicon-amazonwebservices-plain"></i>
+          <p>AWS</p>
+        </div>
+        <div class="prog-lang">
+          <i class="devicon-postman-plain"></i>
+          <p>Postman</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- script to run typing effect -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
