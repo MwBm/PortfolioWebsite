@@ -17,10 +17,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link href="css/style.css" rel="stylesheet" />
 
-    <link rel="icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+
+    <link rel="preload" as="image" href="foreststream.png" />
   </head>
 
   <body>
@@ -59,7 +64,7 @@
           </a>
           <a
             class="btn"
-            onclick="location.href='mailto:matthewbergstrom23@gmail.com';""
+            onclick="location.href='mailto:matthewbergstrom23@gmail.com';"
           >
             <i class="fas fa-envelope"></i>
           </a>
@@ -68,11 +73,15 @@
       <div class="small-container">
         <h2 class="intro">Introduction</h2>
         <p class="text-content">
-          Ever since I took my first advanced math class, I knew I wanted to become an engineer. However, it was an online 
-          Java course that solidified my passion for computer science. Through the constant process of creating and refining 
-          in this field, I’ve realized how much my mindset has evolved. What once seemed impossible now feels achievable, and 
-          every challenge presents a potential solution—it's just a matter of finding it. Outside of programming, I enjoy photography 
-          (the cover photo is one of my own), weightlifting, reading, trading stocks, and spending time with friends and family. 
+          Ever since I took my first advanced math class, I knew I wanted to
+          become an engineer. However, it was an online Java course that
+          solidified my passion for computer science. Through the constant
+          process of creating and refining in this field, I’ve realized how much
+          my mindset has evolved. What once seemed impossible now feels
+          achievable, and every challenge presents a potential solution—it's
+          just a matter of finding it. Outside of programming, I enjoy
+          photography (the cover photo is one of my own), weightlifting,
+          reading, trading stocks, and spending time with friends and family.
         </p>
       </div>
     </div>
@@ -92,12 +101,23 @@
       <div class="small-container">
         <h3 class="proj-names">AWSxINRIX Hackathon</h3>
         <p class="text-content">
-          My team and I developed a Google Chrome extension using Claude 3 Sonnet through AWS Bedrock to assist users in navigating 
-          any website they visit. For this project, I was responsible for integrating Claude as the API, leveraging Postman and Python 
-          to complete the task.
+          My team and I designed and developed a Google Chrome extension using
+          Claude 3 Sonnet via the AWS Bedrock API to improve website navigation.
+          The extension reduced average navigation time by 15 seconds compared
+          to the baseline performance of my teammates. I led the API integration
+          for this project, using Python (Flask) to build the backend and
+          Postman for testing. The workflow involved sending user input from the
+          Chrome extension to a Flask server, which then passed the data to the
+          Claude 3 Sonnet model through the AWS Bedrock API. I utilized prompt
+          engineering to optimize the responses from Claude, which were then
+          returned to the Chrome extension for user interaction. This setup
+          provided a seamless and efficient browsing experience for users.
         </p>
-        <a class="btn to-proj" onclick="window.open('https://devpost.com/software/askron')">
-            <p>DevPost</p>
+        <a
+          class="btn to-proj"
+          onclick="window.open('https://devpost.com/software/askron')"
+        >
+          <p>DevPost</p>
         </a>
       </div>
     </div>
@@ -113,15 +133,24 @@
       <div class="small-container">
         <h3 class="proj-names">Disneyland Data Analysis</h3>
         <p class="text-content">
-         Inspired by my experiences at Disneyland, I analyzed the relationship between temperature and wait 
-         times using a Kaggle dataset cleaned with Pandas. A Pearson correlation test revealed a weak linear 
-         relationship (correlation coefficient: 0.03), likely influenced by the dataset's large size. To address 
-         non-normality, I conducted a Kruskal-Wallis H test, which showed statistically significant differences in wait 
-         times across temperature categories (H-statistic: 14,358, p < 0.01). These results suggest that temperature impacts 
-         wait times at Disneyland.
+          Using a Kaggle dataset, I analyzed the relationship between
+          temperature and wait times at Disneyland. After cleaning the data with
+          Pandas, I conducted a Pearson correlation test (revealing a weak
+          linear relationship, r=0.16, p &lt; .01) and segmented the data into
+          temperature ranges for deeper insights. A Kruskal-Wallis H test
+          confirmed significant differences in wait times across these
+          categories (H=187, p &lt; 0.01), showing temperature’s impact on ride
+          waits. To predict wait times, I trained a RandomForestRegressor,
+          achieving an RMSE of 56 (out of a 0–250 range). While the model needs
+          refinement, the project highlights actionable trends and opportunities
+          for improvement. Click the button below to visit the project’s GitHub
+          repository and explore the README.md for more details!
         </p>
-        <a class="btn to-proj" onclick="window.open('https://github.com/MwBm/DataAnalysisIntro/tree/main')">
-            <p>GitHub Repo</p>
+        <a
+          class="btn to-proj"
+          onclick="window.open('https://github.com/MwBm/DataAnalysisIntro/tree/main')"
+        >
+          <p>GitHub Repo</p>
         </a>
       </div>
     </div>
