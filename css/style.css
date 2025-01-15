@@ -105,6 +105,12 @@ body {
 .aws {
   height: auto;
   max-width: 300px;
+  background-image: url('../images/awslogo.png');
+}
+
+.dis {
+  height: auto;
+  max-width: 300px;
 }
 
 .small-container {
