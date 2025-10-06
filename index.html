@@ -33,6 +33,28 @@
   </head>
 
   <body>
+    <!-- Sticky Navigation Header -->
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <div class="header-brand">
+          <span class="brand-text">MB</span>
+        </div>
+        <nav class="site-nav" role="navigation" aria-label="Main navigation">
+          <a href="#intro" class="nav-link">Intro</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#tech" class="nav-link">Tech</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+
     <header class="hero-image" role="banner">
       <h1 class="above-title">Hello, my name is Matthew Bergstrom</h1>
       <h2 id="title" aria-live="polite">
@@ -42,7 +64,11 @@
     </header>
 
     <main>
-      <section class="container-for-columns" aria-labelledby="intro-heading">
+      <section
+        id="intro"
+        class="container-for-columns"
+        aria-labelledby="intro-heading"
+      >
         <div class="image-container">
           <img
             src="images/24_Bergstrom_32.jpeg"
@@ -75,7 +101,7 @@
             </a>
             <a
               class="btn"
-              href="https://docs.google.com/document/d/1kcSAq2LExl9DfkLhrOnCyxgko048UbkQ/edit"
+              href="https://docs.google.com/document/d/1kOkIzldC_IjIZ_Naq7NuLwJgwpSjACtalATmvVqftbY/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Resume"
@@ -95,45 +121,97 @@
         <div class="small-container">
           <h2 id="intro-heading" class="intro">Introduction</h2>
           <p class="text-content">
-            Ever since I took my first advanced math class, I knew I wanted to
-            become an engineer. An online Java course later, I found a passion
-            for computer science. Outside of programming, I enjoy photography
-            (the cover photo is one of my own), weightlifting, reading, trading
-            stocks, and spending time with friends and family.
+            I’m an engineer and facilitator passionate about bridging technology
+            and people. I believe that great products come from clear
+            communication, thoughtful design, and teams that share a common
+            purpose.
+          </p>
+          <p class="text-content">
+            My experience spans automation, AI projects, and cross-functional
+            program delivery — from developing reusable tools that streamline
+            workflows to leading collaborative efforts that transform complex
+            ideas into simple, actionable solutions. Whether building predictive
+            models or guiding a team through tight deadlines, I’m energized by
+            finding structure in complexity and driving outcomes that make
+            technology feel seamless and human.
+          </p>
+          <p class="text-content">
+            Outside of work, you’ll usually find me following F1 strategy
+            breakdowns, weightlifting, or chasing the perfect mountain-bike
+            trail. I love photography, rainy days with a good book, and the
+            creative spark that comes from noticing small details — the same
+            mindset I bring to engineering and program management.
           </p>
         </div>
       </section>
 
-      <section class="work-experience" aria-labelledby="work-heading">
+      <section id="work" class="work-experience" aria-labelledby="work-heading">
         <h2 id="work-heading">Work Experience</h2>
         <div class="work-list">
-          <article class="work-item">
-            <h3 class="work-role">
-              Software Engineering Intern — Company Name
-            </h3>
+          <article class="work-item enhanced-card" data-project="resmed">
+            <h3 class="work-role">Platform Engineering Intern — Resmed</h3>
             <p class="work-meta">June 2024 — Aug 2024 · San Jose, CA</p>
-            <p class="text-content">
-              Implemented feature X using Python and Flask, improved API latency
-              by 18% and collaborated with a team of 4 engineers.
+            <div class="project-tech-stack">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">GitHub Actions</span>
+              <span class="tech-tag">Vitest</span>
+              <span class="tech-tag">Atlassian Suite</span>
+            </div>
+            <p class="text-content project-summary">
+              At ResMed, I worked as a Platform Engineering Intern focused on
+              streamlining workflows and improving team efficiency. I developed
+              reusable TypeScript automation tools using GitHub Actions and
+              Vitest, reducing workflow errors and helping engineers ship with
+              confidence. My work and presentation earned the "Outstanding
+              Presentation" award and a 6-month internship extension.
             </p>
-          </article>
-
-          <article class="work-item">
-            <h3 class="work-role">Research Assistant — University Lab</h3>
-            <p class="work-meta">Sep 2023 — May 2024 · Santa Clara, CA</p>
-            <p class="text-content">
-              Built data pipelines and conducted analysis in Python; contributed
-              to a paper on performance modeling.
-            </p>
+            <div class="project-details" style="display: none">
+              <div class="detail-section">
+                <h4>Key Achievements</h4>
+                <p class="text-content"">
+                  Earned "Outstanding Presentation" award and secured 6-month
+                  extension.
+                </p>
+              </div>
+              <div class="detail-section">
+                <h4>Technical Impact</h4>
+                <p class="text-content">
+                  Built reusable TypeScript libraries, implemented CI/CD
+                  pipelines with GitHub Actions, and created comprehensive
+                  testing suites with Vitest for platform reliability.
+                </p>
+              </div>
+              <div class="detail-section">
+                <h4>Skills Developed</h4>
+                <p class="text-content">
+                  Platform engineering, DevOps automation, technical
+                  presentation skills, and cross-team collaboration in a
+                  fast-paced healthcare technology environment.
+                </p>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-secondary expand-btn" data-target="resmed">
+                <span class="expand-text">Learn More</span>
+                <i class="fas fa-chevron-down expand-icon"></i>
+              </button>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="projects" aria-labelledby="projects-heading">
+      <section
+        id="projects"
+        class="projects"
+        aria-labelledby="projects-heading"
+      >
         <h2 id="projects-heading">Projects</h2>
 
         <div class="project-list">
-          <article class="project-item work-item">
+          <article
+            class="project-item work-item enhanced-card"
+            data-project="aws"
+          >
             <div class="image-container">
               <video
                 controls
@@ -147,23 +225,60 @@
             </div>
             <div class="small-container">
               <h3 class="proj-names">AWSxINRIX Hackathon</h3>
-              <p class="text-content">
-                My team and I developed a Chrome extension using Claude 3 Sonnet
-                via the AWS Bedrock API to improve navigation, reducing average
-                navigation time by ~15s. I led the API integration and backend
-                (Python + Flask).
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">AWS Bedrock</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <p class="text-content project-summary">
+                Led a 4-member team to build a Chrome extension using Claude 3
+                Sonnet via AWS Bedrock. Oversaw API integration and backend
+                development in Python (Flask), improving navigation efficiency
+                by ~15 seconds.
               </p>
-              <a
-                class="btn btn-primary to-proj"
-                href="https://devpost.com/software/askron"
-                target="_blank"
-                rel="noopener noreferrer"
-                >DevPost</a
-              >
+              <div class="project-details" style="display: none">
+                <div class="detail-section">
+                  <h4>Challenge</h4>
+                  <p>Older users often struggle navigating complex websites</p>
+                </div>
+                <div class="detail-section">
+                  <h4>Solution</h4>
+                  <p>
+                    Built an AI-powered Chrome extension that analyzes the
+                    website you are on, and provides either instructions or the
+                    link to the desired page.
+                  </p>
+                </div>
+                <div class="detail-section">
+                  <h4>What I Learned</h4>
+                  <p>
+                    Through this project, I learned the fundamentals of backend
+                    development with Flask, API integration, and building Chrome
+                    extensions.
+                  </p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a
+                  class="btn btn-primary to-proj"
+                  href="https://devpost.com/software/askron"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >DevPost</a
+                >
+                <button class="btn btn-secondary expand-btn" data-target="aws">
+                  <span class="expand-text">Learn More</span>
+                  <i class="fas fa-chevron-down expand-icon"></i>
+                </button>
+              </div>
             </div>
           </article>
 
-          <article class="project-item work-item">
+          <article
+            class="project-item work-item enhanced-card"
+            data-project="disney"
+          >
             <div class="image-container">
               <img
                 src="images/plot.png"
@@ -174,24 +289,66 @@
             </div>
             <div class="small-container">
               <h3 class="proj-names">Disneyland Data Analysis</h3>
-              <p class="text-content">
-                Analyzed the relationship between temperature and Disneyland
-                wait times. Built a RandomForestRegression model (R² ≈ 0.58).
-                See the repo for details.
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">NumPy</span>
+              </div>
+              <p class="text-content project-summary">
+                Developed a machine learning model to predict Disneyland crowd
+                levels and improve forecasting accuracy for park planning. Built
+                a RandomForestRegression model (R² ≈ 0.58). See the repo for
+                details.
               </p>
-              <a
-                class="btn btn-primary to-proj"
-                href="https://github.com/MwBm/DataAnalysisIntro/tree/main"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub Repo</a
-              >
+              <div class="project-details" style="display: none">
+                <div class="detail-section">
+                  <h4>Challenge</h4>
+                  <p>
+                    Many park visitors struggle to choose the best day to visit,
+                    often relying on unreliable crowd estimates or guesswork.
+                  </p>
+                </div>
+                <div class="detail-section">
+                  <h4>Solution</h4>
+                  <p>
+                    Cleaned and engineered data features, then used SciKit-Learn
+                    models to train and validate predictions. The final model
+                    improved forecasting accuracy by 36%.
+                  </p>
+                </div>
+                <div class="detail-section">
+                  <h4>What I Learned</h4>
+                  <p>
+                    Gained hands-on experience with SciKit-Learn for modeling,
+                    Matplotlib for visualization, and NumPy for data
+                    preprocessing and analysis.
+                  </p>
+                </div>
+              </div>
+              <div class="project-actions">
+                <a
+                  class="btn btn-primary to-proj"
+                  href="https://github.com/MwBm/DataAnalysisIntro/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo</a
+                >
+                <button
+                  class="btn btn-secondary expand-btn"
+                  data-target="disney"
+                >
+                  <span class="expand-text">Learn More</span>
+                  <i class="fas fa-chevron-down expand-icon"></i>
+                </button>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="box" aria-labelledby="tech-heading">
+      <section id="tech" class="box" aria-labelledby="tech-heading">
         <h2 id="tech-heading">Tech Stack</h2>
         <div class="lang">
           <!-- keep the existing prog-lang items -->
