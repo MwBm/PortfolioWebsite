@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>mbergstromweb</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Matthew Bergstrom — portfolio and projects"
+    />
+    <title>mbergstromweb</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -24,180 +29,222 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
-
-    <link rel="preload" as="image" href="foreststream.jpeg" />
+    <link rel="preload" as="image" href="images/foreststream.jpeg" />
   </head>
 
   <body>
-    <!-- hero -->
-    <div class="hero-image">
+    <header class="hero-image" role="banner">
       <h1 class="above-title">Hello, my name is Matthew Bergstrom</h1>
-      <h2 id="title">
-        <span id="text"></span>
-        <span id="cursor"></span>
+      <h2 id="title" aria-live="polite">
+        <span id="text" aria-hidden="true"></span>
+        <span id="cursor" aria-hidden="true"></span>
       </h2>
-    </div>
+    </header>
 
-    <!-- INTRO -->
-    <div class="container-for-columns">
-      <div class="image-container">
-        <img
-          src="images/24_Bergstrom_32.jpeg"
-          alt="Profile Image"
-          class="rounded-image"
-        />
-        <div class="profile-buttons">
-          <a class="btn" onclick="window.open('https://github.com/MwBm')">
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            class="btn"
-            onclick="window.open('https://www.linkedin.com/in/matthew-bergstrom-3578aa215/')"
+    <main>
+      <section class="container-for-columns" aria-labelledby="intro-heading">
+        <div class="image-container">
+          <img
+            src="images/24_Bergstrom_32.jpeg"
+            alt="Portrait of Matthew Bergstrom"
+            class="rounded-image profile-photo"
+            loading="lazy"
+          />
+          <div
+            class="profile-buttons"
+            role="navigation"
+            aria-label="Social links"
           >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a
-            class="btn"
-            onclick="window.open('https://docs.google.com/document/d/1kcSAq2LExl9DfkLhrOnCyxgko048UbkQ/edit')"
-          >
-            <i class="fas fa-file-alt"></i>
-          </a>
-          <a
-            class="btn"
-            onclick="location.href='mailto:matthewbergstrom23@gmail.com';"
-          >
-            <i class="fas fa-envelope"></i>
-          </a>
+            <a
+              class="btn"
+              href="https://github.com/MwBm"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/matthew-bergstrom-3578aa215/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a
+              class="btn"
+              href="https://docs.google.com/document/d/1kcSAq2LExl9DfkLhrOnCyxgko048UbkQ/edit"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Resume"
+            >
+              <i class="fas fa-file-alt" aria-hidden="true"></i>
+            </a>
+            <a
+              class="btn"
+              href="mailto:matthewbergstrom23@gmail.com"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="small-container">
-        <h2 class="intro">Introduction</h2>
-        <p class="text-content">
-          Ever since I took my first advanced math class, I knew I wanted to
-          become an engineer. However, it was an online Java course that
-          solidified my passion for computer science. Through the constant
-          process of creating and refining in this field, I’ve realized how much
-          my mindset has evolved. What once seemed impossible now feels
-          achievable, and every challenge presents a potential solution—it's
-          just a matter of finding it. Outside of programming, I enjoy
-          photography (the cover photo is one of my own), weightlifting,
-          reading, trading stocks, and spending time with friends and family.
-        </p>
-      </div>
-    </div>
 
-    <!-- PROJECTS -->
-    <div class="projects">
-      <h2>Projects</h2>
-    </div>
-    <div class="container-for-columns proj">
-      <div class="image-container">
-        <video
-          controls
-          alt="AWSxINRIX Demo"
-          src="images/aws.mov"
-          poster="images/awslogo.png"
-          type="video/mp4"
-          class="rounded-image aws"
-        />
-      </div>
-      <div class="small-container">
-        <h3 class="proj-names">AWSxINRIX Hackathon</h3>
-        <p class="text-content">
-          My team and I developed a Google Chrome extension using Claude 3
-          Sonnet via the AWS Bedrock API to improve website navigation, reducing
-          average navigation time by 15 seconds. I led the API integration,
-          building the backend with Python (Flask) and optimizing responses
-          through prompt engineering for a seamless user experience.
-        </p>
-        <a
-          class="btn to-proj"
-          onclick="window.open('https://devpost.com/software/askron')"
-        >
-          <p>DevPost</p>
-        </a>
-      </div>
-    </div>
+        <div class="small-container">
+          <h2 id="intro-heading" class="intro">Introduction</h2>
+          <p class="text-content">
+            Ever since I took my first advanced math class, I knew I wanted to
+            become an engineer. An online Java course later, I found a passion
+            for computer science. Outside of programming, I enjoy photography
+            (the cover photo is one of my own), weightlifting, reading, trading
+            stocks, and spending time with friends and family.
+          </p>
+        </div>
+      </section>
 
-    <div class="container-for-columns proj">
-      <div class="image-container">
-        <img
-          src="images/plot.png"
-          alt="Profile Image"
-          class="rounded-image dis"
-        />
-      </div>
-      <div class="small-container">
-        <h3 class="proj-names">Disneyland Data Analysis</h3>
-        <p class="text-content">
-          Using a Kaggle dataset, I analyzed the relationship between
-          temperature and Disneyland wait times, identifying significant
-          differences using statistical tests and achieving an R-squared of 0.58
-          with a RandomForestRegression model. This project highlights
-          actionable trends and opportunities, with further details available in
-          the GitHub repository.
-        </p>
-        <a
-          class="btn to-proj"
-          onclick="window.open('https://github.com/MwBm/DataAnalysisIntro/tree/main')"
-        >
-          <p>GitHub Repo</p>
-        </a>
-      </div>
-    </div>
+      <section class="work-experience" aria-labelledby="work-heading">
+        <h2 id="work-heading">Work Experience</h2>
+        <div class="work-list">
+          <article class="work-item">
+            <h3 class="work-role">
+              Software Engineering Intern — Company Name
+            </h3>
+            <p class="work-meta">June 2024 — Aug 2024 · San Jose, CA</p>
+            <p class="text-content">
+              Implemented feature X using Python and Flask, improved API latency
+              by 18% and collaborated with a team of 4 engineers.
+            </p>
+          </article>
 
-    <!-- LANGUAGES -->
-    <div class="box">
-      <h2>Tech Stack</h2>
-      <div class="lang">
-        <div class="prog-lang">
-          <i class="devicon-c-plain"></i>
-          <p>C</p>
+          <article class="work-item">
+            <h3 class="work-role">Research Assistant — University Lab</h3>
+            <p class="work-meta">Sep 2023 — May 2024 · Santa Clara, CA</p>
+            <p class="text-content">
+              Built data pipelines and conducted analysis in Python; contributed
+              to a paper on performance modeling.
+            </p>
+          </article>
         </div>
-        <div class="prog-lang">
-          <i class="devicon-cplusplus-plain"></i>
-          <p>C++</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-python-plain"></i>
-          <p>Python</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-mysql-plain"></i>
-          <p>SQL</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-javascript-plain"></i>
-          <p>JavaScript</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-matlab-plain"></i>
-          <p>MATLAB</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-html5-plain"></i>
-          <p>HTML</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-css3-plain"></i>
-          <p>CSS</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-amazonwebservices-plain"></i>
-          <p>AWS</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-postman-plain"></i>
-          <p>Postman</p>
-        </div>
-        <div class="prog-lang">
-          <i class="devicon-git-plain"></i>
-          <p>Git</p>
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- script to run typing effect -->
+      <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+
+        <div class="project-list">
+          <article class="project-item work-item">
+            <div class="image-container">
+              <video
+                controls
+                poster="images/awslogo.png"
+                class="rounded-image aws"
+                aria-label="AWSxINRIX Demo"
+              >
+                <source src="images/aws.mov" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="small-container">
+              <h3 class="proj-names">AWSxINRIX Hackathon</h3>
+              <p class="text-content">
+                My team and I developed a Chrome extension using Claude 3 Sonnet
+                via the AWS Bedrock API to improve navigation, reducing average
+                navigation time by ~15s. I led the API integration and backend
+                (Python + Flask).
+              </p>
+              <a
+                class="btn btn-primary to-proj"
+                href="https://devpost.com/software/askron"
+                target="_blank"
+                rel="noopener noreferrer"
+                >DevPost</a
+              >
+            </div>
+          </article>
+
+          <article class="project-item work-item">
+            <div class="image-container">
+              <img
+                src="images/plot.png"
+                loading="lazy"
+                alt="Disneyland data plot"
+                class="rounded-image dis"
+              />
+            </div>
+            <div class="small-container">
+              <h3 class="proj-names">Disneyland Data Analysis</h3>
+              <p class="text-content">
+                Analyzed the relationship between temperature and Disneyland
+                wait times. Built a RandomForestRegression model (R² ≈ 0.58).
+                See the repo for details.
+              </p>
+              <a
+                class="btn btn-primary to-proj"
+                href="https://github.com/MwBm/DataAnalysisIntro/tree/main"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub Repo</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="box" aria-labelledby="tech-heading">
+        <h2 id="tech-heading">Tech Stack</h2>
+        <div class="lang">
+          <!-- keep the existing prog-lang items -->
+          <div class="prog-lang">
+            <i class="devicon-c-plain" aria-hidden="true"></i><span>C</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-cplusplus-plain" aria-hidden="true"></i
+            ><span>C++</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-python-plain" aria-hidden="true"></i
+            ><span>Python</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-mysql-plain" aria-hidden="true"></i
+            ><span>SQL</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-javascript-plain" aria-hidden="true"></i
+            ><span>JavaScript</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-typescript-plain" aria-hidden="true"></i
+            ><span>TypeScript</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-matlab-plain" aria-hidden="true"></i
+            ><span>MATLAB</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-html5-plain" aria-hidden="true"></i
+            ><span>HTML</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-css3-plain" aria-hidden="true"></i
+            ><span>CSS</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-amazonwebservices-plain" aria-hidden="true"></i
+            ><span>AWS</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-postman-plain" aria-hidden="true"></i
+            ><span>Postman</span>
+          </div>
+          <div class="prog-lang">
+            <i class="devicon-git-plain" aria-hidden="true"></i><span>Git</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,15 +1,17 @@
 const textElement = document.getElementById('text');
-const blinkerElement = document.getElementById('cursor');
+const cursorElement = document.getElementById('cursor');
 const text = "I am currently studying Computer Science at Santa Clara University";
 let index = 0;
 
 function type() {
+  if (!textElement || !cursorElement) return;
   if (index < text.length) {
-    textElement.textContent += text.charAt(index); // Use `textContent` to avoid extra HTML formatting
+    textElement.textContent += text.charAt(index);
     index++;
-    setTimeout(type, 35); // Adjust typing speed as needed
+    setTimeout(type, 35);
   } else {
-    blinkerElement.style.display = 'none';
+    // keep blinking cursor (CSS handles blink). Optionally add a class when done:
+    document.documentElement.classList.add('typed-complete');
   }
 }
 
