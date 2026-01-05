@@ -563,7 +563,7 @@ h3 { line-height:1.25; }
   font-size: 0.8rem;
 }
 
-.enhanced-card.expanded .expand-icon {
+.enhanced-card.expanded .expand-icon { 
   transform: rotate(180deg);
 }
 
