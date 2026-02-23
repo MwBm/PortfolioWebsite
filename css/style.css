@@ -206,7 +206,7 @@ main {
   padding: calc(var(--nav-height) + 4rem) 1.25rem 3rem;
   display: grid;
   place-items: center;
-  background-image: url("../images/foreststream.jpeg");
+  background-image: url("../images/foreststream-1920.jpg");
   background-size: cover;
   background-position: center;
   isolation: isolate;
