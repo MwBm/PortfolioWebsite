@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Matthew Bergstrom — portfolio and projects"
+      content="Matthew Bergstrom — portfolio, experience, and projects"
     />
-    <title>mbergstromweb</title>
+    <title>Matthew Bergstrom | Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -26,384 +26,406 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
-    <link href="css/style.css?v=1.0.1" rel="stylesheet" />
-
     <link rel="icon" href="images/icon.ico" type="image/x-icon" />
     <link rel="preload" as="image" href="images/foreststream.jpeg" />
+    <link href="css/style.css?v=2.0.1" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Sticky Navigation Header -->
     <header class="site-header" id="site-header">
       <div class="header-inner">
-        <div class="header-brand">
-          <span class="brand-text">MB</span>
-        </div>
-        <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Go to top">MB</a>
+
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <nav class="site-nav" id="main-nav" aria-label="Main navigation">
           <a href="#intro" class="nav-link">Intro</a>
           <a href="#work" class="nav-link">Work</a>
           <a href="#projects" class="nav-link">Projects</a>
           <a href="#tech" class="nav-link">Tech</a>
         </nav>
-        <button
-          class="nav-toggle"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="hamburger"></span>
-        </button>
       </div>
     </header>
 
-    <header class="hero-image" role="banner">
-      <h1 class="above-title">Hello, my name is Matthew Bergstrom</h1>
-      <h2 id="title" aria-live="polite">
-        <span id="text" aria-hidden="true"></span>
-        <span id="cursor" aria-hidden="true"></span>
-      </h2>
-    </header>
-
-    <main>
-      <section
-        id="intro"
-        class="container-for-columns"
-        aria-labelledby="intro-heading"
-      >
-        <div class="image-container">
-          <img
-            src="images/24_Bergstrom_32.jpeg"
-            alt="Portrait of Matthew Bergstrom"
-            class="rounded-image profile-photo"
-            loading="lazy"
-          />
-          <div
-            class="profile-buttons"
-            role="navigation"
-            aria-label="Social links"
-          >
+    <main id="home">
+      <section class="hero" aria-label="Hero section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Engineering + Program Leadership</p>
+          <h1>Hello, my name is Matthew Bergstrom</h1>
+          <p class="typing-line" aria-live="polite">
+            <span id="text" aria-hidden="true"></span>
+            <span id="cursor" aria-hidden="true"></span>
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
             <a
-              class="btn"
-              href="https://github.com/MwBm"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <i class="fab fa-github" aria-hidden="true"></i>
-            </a>
-            <a
-              class="btn"
-              href="https://www.linkedin.com/in/matthew-bergstrom-3578aa215/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a
-              class="btn"
-              href="https://docs.google.com/document/d/1kOkIzldC_IjIZ_Naq7NuLwJgwpSjACtalATmvVqftbY/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Resume"
-            >
-              <i class="fas fa-file-alt" aria-hidden="true"></i>
-            </a>
-            <a
-              class="btn"
+              class="btn btn-secondary"
               href="mailto:matthewbergstrom23@gmail.com"
-              aria-label="Email"
+              >Contact Me</a
             >
-              <i class="fas fa-envelope" aria-hidden="true"></i>
-            </a>
           </div>
-        </div>
-
-        <div class="small-container">
-          <h2 id="intro-heading" class="intro">Introduction</h2>
-          <p class="text-content">
-            I’m an engineer and facilitator passionate about bridging technology
-            and people. I believe that great products come from clear
-            communication, thoughtful design, and teams that share a common
-            purpose.
-          </p>
-          <p class="text-content">
-            My experience spans automation, AI projects, and cross-functional
-            program delivery — from developing reusable tools that streamline
-            workflows to leading collaborative efforts that transform complex
-            ideas into simple, actionable solutions. Whether building predictive
-            models or guiding a team through tight deadlines, I’m energized by
-            finding structure in complexity and driving outcomes that make
-            technology feel seamless and human.
-          </p>
-          <p class="text-content">
-            Outside of work, you’ll usually find me following F1 strategy
-            breakdowns, weightlifting, or chasing the perfect mountain-bike
-            trail. I love photography, rainy days with a good book, and the
-            creative spark that comes from noticing small details — the same
-            mindset I bring to engineering and program management.
-          </p>
         </div>
       </section>
 
-      <section id="work" class="work-experience" aria-labelledby="work-heading">
-        <h2 id="work-heading">Work Experience</h2>
-        <div class="work-list">
-          <article class="work-item enhanced-card" data-project="resmed">
-            <h3 class="work-role">Platform Engineering Intern — Resmed</h3>
-            <p class="work-meta">June 2024 — Aug 2024 · San Jose, CA</p>
-            <div class="project-tech-stack">
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">GitHub Actions</span>
-              <span class="tech-tag">APIs</span>
-              <span class="tech-tag">JFrog</span>
-              <span class="tech-tag">Kubernetes</span>
-              <span class="tech-tag">Vitest</span>
-              <span class="tech-tag">Atlassian Suite</span>
+      <section
+        id="intro"
+        class="section intro-section reveal"
+        aria-labelledby="intro-heading"
+      >
+        <div class="intro-grid">
+          <div class="profile-column">
+            <img
+              src="images/24_Bergstrom_32.jpeg"
+              alt="Portrait of Matthew Bergstrom"
+              class="profile-photo"
+              loading="lazy"
+            />
+            <div class="profile-buttons" aria-label="Social links">
+              <a
+                class="btn btn-icon"
+                href="https://github.com/MwBm"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a
+                class="btn btn-icon"
+                href="https://www.linkedin.com/in/matthew-bergstrom-3578aa215/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a
+                class="btn btn-icon"
+                href="https://docs.google.com/document/d/1Nv6SG-xT0QeYuAE3b3oYDBtFEf70PHlEfYCOBLEEzqY/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Resume"
+              >
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+              </a>
+              <a
+                class="btn btn-icon"
+                href="mailto:matthewbergstrom23@gmail.com"
+                aria-label="Email"
+              >
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </a>
             </div>
-            <p class="text-content project-summary">
-              At ResMed, I worked as a Platform Engineering Intern focused on
-              streamlining workflows and improving team efficiency. I developed
-              reusable TypeScript automation tools using GitHub Actions and
-              Vitest, reducing workflow errors and helping engineers ship with
-              confidence. My work and presentation earned the "Outstanding
-              Presentation" award and a 6-month internship extension.
+          </div>
+
+          <div class="intro-copy">
+            <h2 id="intro-heading">Introduction</h2>
+            <p>
+              I’m an engineer and facilitator passionate about bridging
+              technology and people. I believe that great products come from
+              clear communication, thoughtful design, and teams that share a
+              common purpose.
             </p>
-            <div class="project-details" style="display: none">
-              <div class="detail-section">
-                <h4>Key Achievements</h4>
-                <p class="text-content"">
-                - Recognized with an Outstanding Presentation Award for clearly communicating technical impact</br>
-                - Earned a 6 month internship extension due to cross team contributions and technical effectiveness</br>
-                - Improved developer experience by reducing repetitive setup and manual troubleshooting</br>
-                - Helped surface operational insights that informed documentation and platform improvements
-                </p>
-              </div>
-              <div class="detail-section">
-                <h4>Technical Impact</h4>
-                <p class="text-content">
-                - Increased CI/CD reliability and failure visibility across internal pipelines</br>
-                - Reduced boilerplate and duplicated logic in internal tooling</br>
-                - Improved data quality and consistency in automated workflows</br>
-                - Enhanced observability into recurring platform issues
-                </p>
-              </div>
-              <div class="detail-section">
-                <h4>Skills Developed</h4>
-                <p class="text-content">
-                  - Platform engineering & developer tooling</br>
-                  - CI/CD design and troubleshooting</br>
-                  - Automation and API integration</br>
-                  - Writing maintainable, production-quality code</br>
-                  - Cross-functional communication and technical presentations
-                </p>
-              </div>
-            </div>
-            <div class="project-actions">
-              <button class="btn btn-secondary expand-btn" data-target="resmed">
-                <span class="expand-text">Learn More</span>
-                <i class="fas fa-chevron-down expand-icon"></i>
-              </button>
-            </div>
-          </article>
+            <p>
+              My experience spans automation, AI projects, and cross-functional
+              program delivery — from developing reusable tools that streamline
+              workflows to leading collaborative efforts that transform complex
+              ideas into simple, actionable solutions. Whether building
+              predictive models or guiding a team through tight deadlines, I’m
+              energized by finding structure in complexity and driving outcomes
+              that make technology feel seamless and human.
+            </p>
+            <p>
+              Outside of work, you’ll usually find me following F1 strategy
+              breakdowns, weightlifting, or chasing the perfect mountain-bike
+              trail. I love photography, rainy days with a good book, and the
+              creative spark that comes from noticing small details, the same
+              mindset I bring to engineering and program management.
+            </p>
+          </div>
         </div>
+      </section>
+
+      <section id="work" class="section reveal" aria-labelledby="work-heading">
+        <div class="section-header">
+          <h2 id="work-heading">Work Experience</h2>
+        </div>
+        <article class="card">
+          <h3>Platform Engineering Intern — ResMed</h3>
+          <p class="work-meta">June 2025 — Present · San Diego, CA</p>
+          <div class="tag-row">
+            <span class="tag">TypeScript</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">APIs</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Helm</span>
+            <span class="tag">Vitest</span>
+            <span class="tag">Slack</span>
+          </div>
+          <p>
+            Built platform tooling and automation that improve reliability,
+            reduce repetitive engineering work, and speed up developer feedback
+            loops.
+          </p>
+          <details class="details-block">
+            <summary>Key impact</summary>
+            <div class="details-content">
+              <ul>
+                <li>
+                  Created an AI-powered Slack summarization tool to identify
+                  recurring platform problems and improve developer experience
+                </li>
+                <li>
+                  Designed and improved internal developer tooling, reducing
+                  boilerplate and streamlining common workflows
+                </li>
+                <li>
+                  Developed reusable TypeScript actions for internal alerts,
+                  enabling faster and more consistent communication
+                </li>
+                <li>
+                  Built CI/CD pipelines with GitHub Actions to improve test
+                  reliability and surface failures earlier in the lifecycle
+                </li>
+                <li>
+                  Integrated external APIs with robust error handling and rate
+                  limiting for dependable automation
+                </li>
+                <li>
+                  Implemented unit tests and collaborated in Agile sprints to
+                  deliver reliable, maintainable features in a large codebase
+                </li>
+                <li>
+                  Worked with Kubernetes and Helm to support automation of
+                  shared namespaces
+                </li>
+                <li>
+                  Earned an Outstanding Presentation award and multiple
+                  internship extensions (12+ months) for technical impact
+                </li>
+              </ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="card">
+          <h3>Retail Sales Associate — Vuori</h3>
+          <p class="work-meta">April 2025 — June 2025 · Santa Clara, CA</p>
+          <div class="tag-row">
+            <span class="tag">Customer Experience</span>
+            <span class="tag">Team Collaboration</span>
+            <span class="tag">Operations</span>
+          </div>
+          <p>
+            Delivered personalized customer support while partnering with
+            teammates to exceed sales goals and improve day-to-day store
+            operations.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Tour Guide — San Diego Bike and Kayak</h3>
+          <p class="work-meta">July 2024 — September 2024 · San Diego, CA</p>
+          <div class="tag-row">
+            <span class="tag">Leadership</span>
+            <span class="tag">Safety</span>
+            <span class="tag">Logistics</span>
+            <span class="tag">Adaptability</span>
+          </div>
+          <p>
+            Led 15+ kayak tours weekly, managing logistics and safety while
+            adapting to changing conditions to maintain consistent 5-star guest
+            reviews.
+          </p>
+        </article>
       </section>
 
       <section
         id="projects"
-        class="projects"
+        class="section reveal"
         aria-labelledby="projects-heading"
       >
-        <h2 id="projects-heading">Projects</h2>
+        <div class="section-header">
+          <h2 id="projects-heading">Projects</h2>
+        </div>
 
-        <div class="project-list">
-          <article
-            class="project-item work-item enhanced-card"
-            data-project="aws"
-          >
-            <div class="image-container">
-              <video
-                controls
-                poster="images/awslogo.png"
-                class="rounded-image aws"
-                aria-label="AWSxINRIX Demo"
-              >
-                <source src="images/aws.mov" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+        <div class="project-grid">
+          <article class="card project-card">
+            <video
+              controls
+              poster="images/awslogo.png"
+              class="project-media"
+              aria-label="AWSxINRIX Demo"
+            >
+              <source src="images/aws.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>AWSxINRIX Hackathon</h3>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">AWS Bedrock</span>
+              <span class="tag">JavaScript</span>
             </div>
-            <div class="small-container">
-              <h3 class="proj-names">AWSxINRIX Hackathon</h3>
-              <div class="project-tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Flask</span>
-                <span class="tech-tag">AWS Bedrock</span>
-                <span class="tech-tag">JavaScript</span>
+            <p>
+              Led a 4-member team to build a Chrome extension using Claude 3
+              Sonnet via AWS Bedrock. Oversaw API integration and backend
+              development in Python (Flask), improving navigation efficiency by
+              ~15 seconds.
+            </p>
+            <details class="details-block">
+              <summary>Learn more</summary>
+              <div class="details-content">
+                <h4>Challenge</h4>
+                <p>Older users often struggle navigating complex websites.</p>
+                <h4>Solution</h4>
+                <p>
+                  Built an AI-powered Chrome extension that analyzes the current
+                  page and provides either instructions or a direct link to the
+                  desired destination.
+                </p>
+                <h4>What I Learned</h4>
+                <p>
+                  Strengthened backend development with Flask, API integration,
+                  and end-to-end extension design.
+                </p>
               </div>
-              <p class="text-content project-summary">
-                Led a 4-member team to build a Chrome extension using Claude 3
-                Sonnet via AWS Bedrock. Oversaw API integration and backend
-                development in Python (Flask), improving navigation efficiency
-                by ~15 seconds.
-              </p>
-              <div class="project-details" style="display: none">
-                <div class="detail-section">
-                  <h4>Challenge</h4>
-                  <p>Older users often struggle navigating complex websites</p>
-                </div>
-                <div class="detail-section">
-                  <h4>Solution</h4>
-                  <p>
-                    Built an AI-powered Chrome extension that analyzes the
-                    website you are on, and provides either instructions or the
-                    link to the desired page.
-                  </p>
-                </div>
-                <div class="detail-section">
-                  <h4>What I Learned</h4>
-                  <p>
-                    Through this project, I learned the fundamentals of backend
-                    development with Flask, API integration, and building Chrome
-                    extensions.
-                  </p>
-                </div>
-              </div>
-              <div class="project-actions">
-                <a
-                  class="btn btn-primary to-proj"
-                  href="https://devpost.com/software/askron"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >DevPost</a
-                >
-                <button class="btn btn-secondary expand-btn" data-target="aws">
-                  <span class="expand-text">Learn More</span>
-                  <i class="fas fa-chevron-down expand-icon"></i>
-                </button>
-              </div>
-            </div>
+            </details>
+            <a
+              class="btn btn-primary project-link"
+              href="https://devpost.com/software/askron"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View DevPost</a
+            >
           </article>
 
-          <article
-            class="project-item work-item enhanced-card"
-            data-project="disney"
-          >
-            <div class="image-container">
-              <img
-                src="images/mLplot.png"
-                loading="lazy"
-                alt="Disneyland data plot"
-                class="rounded-image dis"
-              />
+          <article class="card project-card">
+            <img
+              src="images/mLplot.png"
+              loading="lazy"
+              alt="Disneyland data plot"
+              class="project-media"
+            />
+            <h3>Disneyland Ride Wait Time Predictor</h3>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">NeuralForecast</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">NumPy</span>
             </div>
-            <div class="small-container">
-              <h3 class="proj-names">Disneyland Ride Wait Time Predictor</h3>
-              <div class="project-tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">Scikit-learn</span>
-                <span class="tech-tag">NueralForecast</span>
-                <span class="tech-tag">XGBoost</span>
-                <span class="tech-tag">Matplotlib</span>
-                <span class="tech-tag">NumPy</span>
+            <p>
+              This project explored how historical and environmental factors
+              influence theme park ride wait times. We designed a full machine
+              learning pipeline to predict wait times using time-series and
+              regression models.
+            </p>
+            <details class="details-block">
+              <summary>Learn more</summary>
+              <div class="details-content">
+                <h4>Challenges</h4>
+                <p>
+                  Working with noisy, time-dependent data affected by external
+                  factors such as weather and holidays, while selecting
+                  appropriate models.
+                </p>
+                <h4>Solution</h4>
+                <p>
+                  Built a data pipeline using Pandas to clean, preprocess, and
+                  aggregate historical wait-time data, with feature engineering
+                  and MAE evaluation.
+                </p>
+                <h4>What I Learned</h4>
+                <p>
+                  Learned the importance of feature engineering in real-world
+                  systems and how to communicate model performance clearly.
+                </p>
               </div>
-              <p class="text-content project-summary">
-                This project explored how historical and environmental factors influence theme park ride wait times. We designed a full machine learning pipeline to predict wait times using time series and regression models.
-              </p>
-              <div class="project-details" style="display: none">
-                <div class="detail-section">
-                  <h4>Challenges</h4>
-                  <p>
-                  Working with noisy, time dependent data affected by external factors such as weather and holidays, and selecting appropriate models.
-                  </p>
-                </div>
-                <div class="detail-section">
-                  <h4>Solution</h4>
-                  <p>
-                  Built a data pipeline using Pandas to clean, preprocess, and aggregate historical wait-time data, engineering features, and evaluating using MAE.
-                  </p>
-                </div>
-                <div class="detail-section">
-                  <h4>What I Learned</h4>
-                  <p>
-                  The importance of feature engineering in modeling real world systems, and how to evaluate and communicate model performance effectively
-                  </p>
-                </div>
-              </div>
-              <div class="project-actions">
-                <a
-                  class="btn btn-primary to-proj"
-                  href="https://github.com/MwBm/DataAnalysisIntro/tree/main"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub Repo</a
-                >
-                <button
-                  class="btn btn-secondary expand-btn"
-                  data-target="disney"
-                >
-                  <span class="expand-text">Learn More</span>
-                  <i class="fas fa-chevron-down expand-icon"></i>
-                </button>
-              </div>
-            </div>
+            </details>
+            <a
+              class="btn btn-primary project-link"
+              href="https://github.com/MwBm/DataAnalysisIntro/tree/main"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View GitHub Repo</a
+            >
           </article>
         </div>
       </section>
 
-      <section id="tech" class="box" aria-labelledby="tech-heading">
-        <h2 id="tech-heading">Tech Stack</h2>
-        <div class="lang">
-          <!-- keep the existing prog-lang items -->
-          <div class="prog-lang">
-            <i class="devicon-c-plain" aria-hidden="true"></i><span>C</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-cplusplus-plain" aria-hidden="true"></i
-            ><span>C++</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-python-plain" aria-hidden="true"></i
-            ><span>Python</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-mysql-plain" aria-hidden="true"></i
-            ><span>SQL</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-javascript-plain" aria-hidden="true"></i
-            ><span>JavaScript</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-typescript-plain" aria-hidden="true"></i
-            ><span>TypeScript</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-matlab-plain" aria-hidden="true"></i
-            ><span>MATLAB</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-html5-plain" aria-hidden="true"></i
-            ><span>HTML</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-css3-plain" aria-hidden="true"></i
-            ><span>CSS</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-amazonwebservices-plain" aria-hidden="true"></i
-            ><span>AWS</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-postman-plain" aria-hidden="true"></i
-            ><span>Postman</span>
-          </div>
-          <div class="prog-lang">
-            <i class="devicon-git-plain" aria-hidden="true"></i><span>Git</span>
-          </div>
+      <section id="tech" class="section reveal" aria-labelledby="tech-heading">
+        <div class="section-header">
+          <h2 id="tech-heading">Tech Stack</h2>
+        </div>
+        <div class="tech-groups">
+          <article class="card tech-card">
+            <h3>Programming Languages</h3>
+            <div class="tag-row">
+              <span class="tag"
+                ><i class="devicon-python-plain" aria-hidden="true"></i
+                >Python</span
+              >
+              <span class="tag"
+                ><i class="devicon-cplusplus-plain" aria-hidden="true"></i>C /
+                C++</span
+              >
+              <span class="tag"
+                ><i class="devicon-javascript-plain" aria-hidden="true"></i
+                >JavaScript / TypeScript</span
+              >
+              <span class="tag"
+                ><i class="devicon-mysql-plain" aria-hidden="true"></i>SQL</span
+              >
+              <span class="tag"
+                ><i class="devicon-matlab-plain" aria-hidden="true"></i
+                >MATLAB</span
+              >
+            </div>
+          </article>
+
+          <article class="card tech-card">
+            <h3>Frameworks &amp; Tools</h3>
+            <div class="tag-row">
+              <span class="tag"
+                ><i class="fas fa-brain" aria-hidden="true"></i
+                >Scikit-learn</span
+              >
+              <span class="tag"
+                ><i class="fas fa-table" aria-hidden="true"></i>Pandas</span
+              >
+              <span class="tag"
+                ><i class="fas fa-chart-line" aria-hidden="true"></i
+                >Matplotlib</span
+              >
+              <span class="tag"
+                ><i class="devicon-git-plain" aria-hidden="true"></i>Git</span
+              >
+              <span class="tag"
+                ><i class="fab fa-github" aria-hidden="true"></i>GitHub
+                Actions</span
+              >
+              <span class="tag"
+                ><i class="fas fa-vial" aria-hidden="true"></i>Vitest (Unit
+                Testing)</span
+              >
+            </div>
+          </article>
         </div>
       </section>
     </main>
 
-    <script src="js/script.js?v=1.0.1"></script>
+    <script src="js/script.js?v=2.0.0"></script>
   </body>
 </html>
